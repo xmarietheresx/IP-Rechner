@@ -1,4 +1,4 @@
-package com.example.myfirstapp;
+package at.chif17.ipcalcapp;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
