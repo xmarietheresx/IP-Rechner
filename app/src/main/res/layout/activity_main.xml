@@ -1,18 +1,148 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MainActivity">
+                                             xmlns:tools="http://schemas.android.com/tools"
+                                             android:layout_width="match_parent"
+                                             android:layout_height="match_parent"
+                                             tools:context=".activities.MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:orientation="vertical"
+      android:padding="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+      <!-- region IPv6 network address -->
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="@string/ipv4_network_address"
+          android:textSize="16sp"/>
+
+      <LinearLayout
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/etIp1"
+            android:textSize="18dp"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:maxLength="3"
+            android:hint="@string/_192"
+            android:importantForAutofill="no"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dot"/>
+
+        <EditText
+            android:id="@+id/etIp2"
+            android:textSize="18dp"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:maxLength="3"
+            android:hint="@string/_168"
+            android:importantForAutofill="no"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dot"/>
+
+        <EditText
+            android:id="@+id/etIp3"
+            android:textSize="18dp"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:maxLength="3"
+            android:hint="@string/_0"
+            android:importantForAutofill="no"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dot"/>
+
+        <EditText
+            android:id="@+id/etIp4"
+            android:textSize="18dp"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:maxLength="3"
+            android:hint="@string/_0"
+            android:importantForAutofill="no"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/slash"/>
+
+        <EditText
+            android:id="@+id/etIpPrefix"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:maxLength="3"
+            android:hint="@string/_24"
+            android:importantForAutofill="no"/>
+
+      </LinearLayout>
+
+      <!-- endregion-->
+
+      <!-- region Checkboxes -->
+
+      <CheckBox
+          android:id="@+id/subnets"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="@string/subnet"/>
+
+      <CheckBox
+          android:id="@+id/binaryaddress"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="@string/binary_address"/>
+
+      <!-- endregion -->
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:orientation="vertical"
+        android:gravity="bottom">
+
+      <!-- region buttons -->
+      <Button
+          android:layout_width="match_parent"
+          android:layout_height="50dp"
+          android:text="@string/calculate"
+          android:onClick="calculate"/>
+
+      <Button
+          android:layout_width="match_parent"
+          android:layout_height="50dp"
+          android:text="@string/saved"
+          android:enabled="false"/>
+
+      <!-- endregion -->
+
+    </LinearLayout>
+
+  </LinearLayout>
 
 </android.support.constraint.ConstraintLayout>

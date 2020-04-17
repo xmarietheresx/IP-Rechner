@@ -1,3 +1,15 @@
 <resources>
-    <string name="app_name">My First App</string>
+  <string name="app_name">IP-Rechner</string>
+  <string name="ipv4_network_address">IPv4 Netzwerkadresse</string>
+  <string name="dot">.</string>
+  <string name="_192">192</string>
+  <string name="_168">168</string>
+  <string name="_0">0</string>
+  <string name="slash">/</string>
+  <string name="_24">24</string>
+  <string name="calculate">Berechnen</string>
+  <string name="saved">Gespeichertes</string>
+  <string name="subnet">Subnetze</string>
+  <string name="binary_address">Binär Adresse</string>
+  <string name="results">Ergebnisse</string>
 </resources>
