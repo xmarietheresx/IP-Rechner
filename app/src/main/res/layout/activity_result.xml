@@ -7,4 +7,105 @@
     android:layout_height="match_parent"
     tools:context=".activities.ResultActivity">
 
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:orientation="vertical"
+      android:padding="10dp">
+
+
+    <!-- region IPAddress-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+      <TextView
+          android:id="@+id/tvIPAddress"
+          android:layout_width="0dp"
+          android:layout_weight="1"
+          android:layout_height="wrap_content"
+          android:text="@string/ipv4_address"/>
+
+      <TextView
+          android:id="@+id/tvIPAddressValue"
+          android:layout_width="0dp"
+          android:layout_weight="2"
+          android:layout_height="wrap_content"
+          android:text="192.168.0.1"/>
+
+    </LinearLayout>
+    <!-- endregion -->
+
+    <!-- region Subnetmask-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+      <TextView
+          android:id="@+id/tvSubnetmask"
+          android:layout_width="0dp"
+          android:layout_weight="1"
+          android:layout_height="wrap_content"
+          android:text="@string/subnetMask"/>
+
+      <TextView
+          android:id="@+id/tvSubnetMaskValue"
+          android:layout_width="0dp"
+          android:layout_weight="2"
+          android:layout_height="wrap_content"
+          android:text="255.255.255.0"/>
+
+    </LinearLayout>
+    <!-- endregion -->
+
+    <!-- region NetworkAddress-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+      <TextView
+          android:id="@+id/tvNetworkAddress"
+          android:layout_width="0dp"
+          android:layout_weight="1"
+          android:layout_height="wrap_content"
+          android:text="@string/networkAddress"/>
+
+      <TextView
+          android:id="@+id/tvNetworkAddressValue"
+          android:layout_width="0dp"
+          android:layout_weight="2"
+          android:layout_height="wrap_content"
+          android:text="192.168.0.0"/>
+
+    </LinearLayout>
+    <!-- endregion -->
+
+    <!-- region NetworkBroadcast-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+      <TextView
+          android:id="@+id/tvNetworkBroadcast"
+          android:layout_width="0dp"
+          android:layout_weight="1"
+          android:layout_height="wrap_content"
+          android:text="@string/networkBroadcast"/>
+
+      <TextView
+          android:id="@+id/tvNetworkBroadcastValue"
+          android:layout_width="0dp"
+          android:layout_weight="2"
+          android:layout_height="wrap_content"
+          android:text="192.168.0.255"/>
+
+    </LinearLayout>
+    <!-- endregion -->
+
+  </LinearLayout>
+
 </android.support.constraint.ConstraintLayout>

@@ -7,4 +7,9 @@ public class IntegerUtils {
     return true;
   }
 
+  public static boolean isExactly(int toBe, int... num){
+    for (int i : num) if (i != toBe) return false;
+    return true;
+  }
+
 }

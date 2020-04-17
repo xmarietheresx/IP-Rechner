@@ -21,7 +21,7 @@
       <TextView
           android:layout_width="match_parent"
           android:layout_height="wrap_content"
-          android:text="@string/ipv4_network_address"
+          android:text="@string/ipv4_address"
           android:textSize="16sp"/>
 
       <LinearLayout
@@ -37,7 +37,8 @@
             android:inputType="number"
             android:maxLength="3"
             android:hint="@string/_192"
-            android:importantForAutofill="no"/>
+            android:importantForAutofill="no"
+            android:text="192"/>
 
         <TextView
             android:layout_width="wrap_content"
@@ -52,7 +53,8 @@
             android:inputType="number"
             android:maxLength="3"
             android:hint="@string/_168"
-            android:importantForAutofill="no"/>
+            android:importantForAutofill="no"
+            android:text="168"/>
 
         <TextView
             android:layout_width="wrap_content"
@@ -67,7 +69,8 @@
             android:inputType="number"
             android:maxLength="3"
             android:hint="@string/_0"
-            android:importantForAutofill="no"/>
+            android:importantForAutofill="no"
+            android:text="0"/>
 
         <TextView
             android:layout_width="wrap_content"
@@ -82,7 +85,8 @@
             android:inputType="number"
             android:maxLength="3"
             android:hint="@string/_0"
-            android:importantForAutofill="no"/>
+            android:importantForAutofill="no"
+            android:text="1"/>
 
         <TextView
             android:layout_width="wrap_content"
@@ -96,7 +100,24 @@
             android:inputType="number"
             android:maxLength="3"
             android:hint="@string/_24"
-            android:importantForAutofill="no"/>
+            android:importantForAutofill="no"
+            android:text="24"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="@string/to"/>
+
+        <EditText
+            android:id="@+id/etPrefixTo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:maxLength="3"
+            android:hint="@string/_28"
+            android:importantForAutofill="no"
+            android:text="28"/>
 
       </LinearLayout>
 
@@ -104,17 +125,19 @@
 
       <!-- region Checkboxes -->
 
-      <CheckBox
+      <!--<CheckBox
           android:id="@+id/subnets"
           android:layout_width="wrap_content"
           android:layout_height="wrap_content"
-          android:text="@string/subnet"/>
+          android:text="@string/subnet"
+          android:clickable="false"/> -->
 
       <CheckBox
-          android:id="@+id/binaryaddress"
+          android:id="@+id/cbBinaryAddress"
           android:layout_width="wrap_content"
           android:layout_height="wrap_content"
-          android:text="@string/binary_address"/>
+          android:text="@string/binary_addresses"
+          android:checked="true"/>
 
       <!-- endregion -->
 
